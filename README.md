@@ -7,10 +7,12 @@ El objetivo es mejorar la lógica de programación y preparar entrevistas técni
 ## Estructura
 
 Las soluciones están organizadas por dificultad:
+`````markdown
 leetcode-java-solutions/
 ├── easy/
 ├── medium/
 ├── hard/
+`````
 
 Cada archivo incluye:
 - Enlace al problema original
