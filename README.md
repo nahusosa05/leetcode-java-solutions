@@ -24,4 +24,4 @@ Cada archivo incluye:
 - Plan actual: LeetCode 75
 - Lenguaje: Java
 
-- [Mi perfil de LeetCode](https://leetcode.com/nahusosa05)
+- [Mi perfil de LeetCode](https://leetcode.com/u/n4uh_7/)
