@@ -1,7 +1,7 @@
 package easy.ej2996_smallestMissingInteger;
 
-// Problema: Smallest Missing Integer Greater Than Sequential Prefix Sum
-// Enlace: https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum
+// Problem: Smallest Missing Integer Greater Than Sequential Prefix Sum
+// Link: https://leetcode.com/problems/smallest-missing-integer-greater-than-sequential-prefix-sum
 
 public class Solution {
     // Busco el número que sigue a una cadena consecutiva de números en el array

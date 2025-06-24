@@ -1,7 +1,7 @@
 package easy.ej14_longestCommonPrefix;
 
-// Problema: Longest Common Prefix
-// Enlace: https://leetcode.com/problems/longest-common-prefix
+// Problem: Longest Common Prefix
+// Link: https://leetcode.com/problems/longest-common-prefix
 
 public class Solution {
     public static String longestCommonPrefix(String[] strs) {

@@ -1,7 +1,7 @@
 package easy.ej1768_mergeStringsAlternately;
 
-// Problema: Merge Strings Alternately
-// Enlace: https://leetcode.com/problems/merge-strings-alternately
+// Problem: Merge Strings Alternately
+// Link: https://leetcode.com/problems/merge-strings-alternately
 
 public class Solution {
     public static String mergeAlternately(String word1, String word2) {

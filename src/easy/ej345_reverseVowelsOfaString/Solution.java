@@ -1,7 +1,7 @@
 package easy.ej345_reverseVowelsOfaString;
 
-// Problema: Reverse Vowels of a String
-// Enlace: https://leetcode.com/problems/reverse-vowels-of-a-string
+// Problem: Reverse Vowels of a String
+// Link: https://leetcode.com/problems/reverse-vowels-of-a-string
 
 public class Solution {
     private static boolean isVowel(char c) {
