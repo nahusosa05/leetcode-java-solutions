@@ -16,7 +16,6 @@ leetcode-java-solutions/src/
 
 Cada archivo incluye:
 - Enlace al problema original
-- Estrategia de resolución
 - Código comentado
 
 ## Progreso
