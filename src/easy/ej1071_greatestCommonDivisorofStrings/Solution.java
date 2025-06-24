@@ -1,5 +1,8 @@
 package easy.ej1071_greatestCommonDivisorofStrings;
 
+// Problema: Greatest Common Divisor of Strings
+// Enlace: https://leetcode.com/problems/greatest-common-divisor-of-strings
+
 public class Solution {
     // For two strings s and t, we say "t divides s" if and only if
     // s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
