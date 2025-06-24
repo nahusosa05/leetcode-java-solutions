@@ -20,7 +20,8 @@ Cada archivo incluye:
 
 ## Progreso
 - Objetivo: resolver un ejercicio diario.
-- Plan actual: LeetCode 75
+- Problemas resueltos: 9
 - Lenguaje: Java
 
+## Links de interés
 - [Mi perfil de LeetCode](https://leetcode.com/u/n4uh_7/)
