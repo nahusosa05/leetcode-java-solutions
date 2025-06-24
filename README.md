@@ -16,23 +16,25 @@ leetcode-java-solutions/src/
 
 ## Ejemplo de solución
 
+## Ejemplo de solución
+
 ```java
 // Problema: Two Sum
 // Enlace: https://leetcode.com/problems/two-sum/
 
 public int[] twoSum(int[] nums, int target) {
-        int[] out = new int[2];
-        for (int i = 0; i<nums.length; i++) {
-            for (int j = i + 1; j<nums.length;j++) {
-                if (nums[i] + nums[j] == target) {
-                    out[0] = i;
-                    out[1] = j;
-                    break;
-                }
+    int[] out = new int[2];
+    for (int i = 0; i < nums.length; i++) {
+        for (int j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] == target) {
+                out[0] = i;
+                out[1] = j;
+                break;
             }
         }
-        return out;
     }
+    return out;
+}
 ```
 
 Cada archivo incluye:
