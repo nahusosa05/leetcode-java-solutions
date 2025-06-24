@@ -2,7 +2,7 @@ package easy.ej1_twoSum;
 import java.util.Arrays;
 
 // Problema: Two Sum
-// Enlace: https://leetcode.com/problems/two-sum/
+// Enlace: https://leetcode.com/problems/two-sum
 
 public class Solution {
     public static int[] twoSum(int[] nums, int target) {

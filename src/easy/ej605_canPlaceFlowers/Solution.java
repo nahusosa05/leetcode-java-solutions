@@ -28,8 +28,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        // Given an integer array flowerbed containing 0's and
-        // 1's, where 0 means empty and 1 means not empty
+        // Given an integer array flowerbed containing 0 and
+        // 1, where 0 means empty and 1 means not empty
         int[] flowerbed = {1,0,1,0,1,0,1,0};
         System.out.println(canPlaceFlowers(flowerbed,0));
     }

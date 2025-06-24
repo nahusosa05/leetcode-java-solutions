@@ -5,7 +5,7 @@ package easy.ej1071_greatestCommonDivisorofStrings;
 
 public class Solution {
     // For two strings s and t, we say "t divides s" if and only if
-    // s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times).
+    // s = t + t + t + ... + t + t (i.e., t is concatenated with itself one or more times)
     public static String gcdOfStrings(String str1, String str2) {
         if (!(str1 + str2).equals(str2 + str1)) {
             return "";

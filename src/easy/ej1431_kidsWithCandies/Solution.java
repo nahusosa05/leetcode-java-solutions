@@ -27,8 +27,8 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        var candies = new int[]{4,2,1,1,2};
-        int extraCandies = 4;
+        var candies = new int[]{2,3,5,1,3};
+        int extraCandies = 3;
         System.out.println(kidsWithCandies(candies,extraCandies));
     }
 }
