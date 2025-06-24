@@ -8,7 +8,7 @@ El objetivo es mejorar la lógica de programación y preparar entrevistas técni
 
 Las soluciones están organizadas por dificultad:
 `````markdown
-leetcode-java-solutions/
+leetcode-java-solutions/src/
 ├── easy/
 ├── medium/
 ├── hard/
