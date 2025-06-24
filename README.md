@@ -16,8 +16,6 @@ leetcode-java-solutions/src/
 
 ## Ejemplo de solución
 
-## Ejemplo de solución
-
 ```java
 // Problema: Two Sum
 // Enlace: https://leetcode.com/problems/two-sum/
