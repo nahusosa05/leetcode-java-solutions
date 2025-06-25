@@ -1,8 +1,8 @@
 package medium.ej238_productOfArrayExceptSelf;
+import java.util.Arrays;
 
 // Problem: Product of Array Except Self
 // Link: https://leetcode.com/problems/product-of-array-except-self
-import java.util.Arrays;
 
 public class Solution {
     public static int[] productExceptSelf(int[] nums) {
