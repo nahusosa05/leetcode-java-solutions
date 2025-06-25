@@ -4,28 +4,27 @@ package hard.ej2040_KthSmallestProduct;
 // Link: https://leetcode.com/problems/kth-smallest-product-of-two-sorted-arrays
 
 public class Solution {
-    public static long countLessThanOrEqual(long x, int[] nums1, int[] nums2) {
+    public static long countLessThanOrEqual(long target, int[] nums1, int[] nums2) {
         long count = 0;
-        for (int a : nums1) {
-            if (a == 0) {
-                if (x >= 0) count += nums2.length;
-            } else if (a > 0) {
-                int l = 0, r = nums2.length;
-                while (l < r) {
-                    int m = l + (r - l) / 2;
-                    if ((long) a * nums2[m] <= x) l = m + 1;
-                    else r = m;
-                }
-                count += l;
-            } else { // a < 0
-                int l = 0, r = nums2.length;
-                while (l < r) {
-                    int m = l + (r - l) / 2;
-                    if ((long) a * nums2[m] <= x) r = m;
-                    else l = m + 1;
-                }
-                count += nums2.length - l;
+        for (int num1 : nums1) {
+            if (num1 == 0) {
+                if (target >=0) count += nums2.length;
+                continue;
             }
+
+            int low = 0, high = nums2.length;
+            while (low < high) {
+                int mid = low + (high - low) / 2;
+                long product = (long) num1 * nums2[mid];
+                if (product <= target) {
+                    if (num1 > 0) low = mid + 1;
+                    else high = mid;
+                } else {
+                    if (num1 > 0) high = mid;
+                    else low = mid + 1;
+                }
+            }
+            count += (num1 > 0) ? low : nums2.length - low;
         }
         return count;
     }
@@ -49,9 +48,12 @@ public class Solution {
     }
 
     public static void main(String[] args) {
-        int[] nums1 = {-2,-1,0,1,2};
-        int[] nums2 = {-3,-1,2,4,5};
-        int k = 3;
+        int[] nums1 = {-3,0,2};
+        int[] nums2 = {-2,1,3};
+        // Lo que hace este método, es buscar el número de este array de productos de elementos de nums 1
+        // y nums 2, en la posición Kth que se desee.
+        // {-9,-4,-3,0,0,0,2,6,6}
+        int k = 4;
 
         // display 8
         System.out.println(kthSmallestProduct(nums1,nums2,k));
