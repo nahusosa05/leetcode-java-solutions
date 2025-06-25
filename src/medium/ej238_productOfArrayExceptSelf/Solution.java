@@ -8,17 +8,23 @@ public class Solution {
     public static int[] productExceptSelf(int[] nums) {
         int length = nums.length;
         int[] output = new int[nums.length];
+        /*
+        Para lograr una complejidad O(n), se construye el array de resultados en dos pasadas:
+        1) En la primera pasada (de izquierda a derecha), se guarda en cada posición el producto
+        de todos los elementos a su izquierda.
+        2) En la segunda pasada (de derecha a izquierda), se multiplican los productos acumulados de la derecha.
+        Así se evita usar división y se mantiene O(n) sin usar espacio extra adicional (más allá del array resultado).
+        */
 
-        for (int j = 0; j < nums.length; j++) {
-            int result = 1;
-            int i = 0;
-            while (i < nums.length) {
-                if (i != j) {
-                    result *= nums[i];
-                }
-                i++;
-            }
-            output[j] = result;
+        output[0] = 1;
+        for (int i = 1; i < length; i++) {
+            output[i] = output[i-1] * nums[i-1];
+        }
+
+        int rigth = 1;
+        for (int j = length - 1; j >= 0; j--) {
+            output[j] *= rigth;
+            rigth *= nums[j];
         }
 
         return output;
