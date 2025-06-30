@@ -1,7 +1,5 @@
 package easy.ej26_RemoveDuplicatesFromSortedArray;
 
-import java.util.Arrays;
-
 // Problem: Remove Duplicates from Sorted Array
 // Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array
 
