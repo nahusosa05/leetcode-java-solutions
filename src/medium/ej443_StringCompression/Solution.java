@@ -1,5 +1,9 @@
 package medium.ej443_StringCompression;
 
+// Problem: String Compression
+// Link: https://leetcode.com/problems/string-compression
+
+
 class Solution {
     // input array -> output array modificado, longitud
     // Estrategia: Two pointers (readPtr, WritePtr)

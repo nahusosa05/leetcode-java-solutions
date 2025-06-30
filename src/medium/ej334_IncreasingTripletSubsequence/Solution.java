@@ -1,5 +1,8 @@
 package medium.ej334_IncreasingTripletSubsequence;
 
+// Problem: Increasing Triplet Subsequence
+// Link: https://leetcode.com/problems/increasing-triplet-subsequence
+
 public class Solution {
     public static boolean increasingTriplet(int[] nums) {
         // variables para retener valores
