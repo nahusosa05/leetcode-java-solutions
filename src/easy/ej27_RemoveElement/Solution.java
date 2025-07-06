@@ -7,25 +7,35 @@ import java.util.Arrays;
 public class Solution {
     public static int removeElement(int[] nums, int val) {
         int left = 0;
-        int right = nums.length-1;
-        System.out.println(Arrays.toString(nums));
-        while (left < nums.length) {
-            int firstNum = nums[left];
-            int lastNum = nums[right];
-            if (firstNum != val && lastNum != val) {
-                right--;
-                left++;
+        int right = nums.length - 1;
+        // System.out.println(Arrays.toString(nums));
+        while (left <= right ) {
+            int currentNum = nums[left];
+            if (currentNum == val) {
+                // Skip all occurrences of `val` from the right end
+                while (right > left && nums[right] == val) {
+                    right--;
+                }
+
+                if (left >= right) break;
+
+                int temp = nums[right];
+                nums[right] = nums[left];
+                nums[left] = temp;
             }
+            left++;
         }
-        System.out.println(Arrays.toString(nums));
-        return right;
+        // System.out.println(Arrays.toString(nums));
+        return left;
     }
 
     public static void main(String[] args) {
-        int[] nums = {0,1,2,2,3,0,4,2};
-        int val = 2;
+        int[] nums = {3,2,2,3};
+        int[] nums1 = {0,1,2,2,3,0,4,2};
 
-        int k = removeElement(nums, val);
+        int k = removeElement(nums, 2);
+        System.out.println(k); // output: 2
+        k = removeElement(nums1, 2);
         System.out.println(k); // output: 5
     }
 }
