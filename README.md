@@ -41,7 +41,7 @@ Cada archivo incluye:
 
 ## Progreso
 - Objetivo: resolver un ejercicio diario.
-- Problemas resueltos: 20
+- Problemas resueltos: 23
 - Lenguaje: Java
 
 ## Links de interés
