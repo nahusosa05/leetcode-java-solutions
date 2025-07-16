@@ -2,6 +2,9 @@ package easy.ej20_validParentheses;
 
 import java.util.Stack;
 
+// Problem: Valid Parentheses
+// Link: https://leetcode.com/problems/valid-parentheses
+
 class Solution {
     static boolean isOpening(char c) {
         return c == '(' || c == '[' || c == '{';
